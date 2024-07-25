@@ -1,10 +1,14 @@
 import 'dart:async';
+import 'dart:ui';
 
 import 'package:flame/components.dart';
 import 'package:flame/game.dart';
 import 'package:seagulls_i_malmo/levels/level.dart';
 
 class SeagullsIMalmo extends FlameGame {
+  @override
+  Color backgroundColor() => const Color(0xff211f30);
+
   late final CameraComponent cam;
   final world = Level();
 
